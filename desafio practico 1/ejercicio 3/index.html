@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Conversión de Longitud</title>
+    <link rel="stylesheet" href="ejercicio 3">
+    <script src="scrt03.js"></script>
+</head>  
+<body>
+    <div class="form-container">
+        <h2>Conversión de Unidades de Longitud</h2>
+        <form id="conversionForm">
+            <label>Valor: <input type="number" id="value" step="0.01" required></label>
+            <label>Unidad inicial: 
+                <select id="fromUnit" required>
+                    <option value="mm">Milímetros</option>
+                    <option value="cm">Centímetros</option>
+                    <option value="m">Metros</option>
+                    <option value="km">Kilómetros</option>
+                    <option value="in">Pulgadas</option>
+                </select>
+            </label>
+            <button type="submit">Convertir</button>
+        </form>
+        <div id="result"></div>
+    </div>
+</html>

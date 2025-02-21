@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Rockola</title>
+    <style>
+        .form-container {
+            width: 400px;
+            margin: 20px;
+            padding: 15px;
+            border: 1px solid #ccc;
+        }
+        select, button {
+            margin: 5px 0;
+            padding: 5px;
+            width: 200px;
+        }
+        button {
+            background-color: #4CAF50;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+        button:hover {
+            background-color: #45a049;
+        }
+        #result {
+            margin-top: 10px;
+        }
+        img {
+            max-width: 200px;
+            margin: 5px 0;
+        }
+    </style>
+</head>
+<body>
+    <div class="form-container">
+        <h2>Rockola</h2>
+        <select id="genre" onchange="updateSongs()">
+            <option value="">Selecciona un género</option>
+            <option value="cumbia">Cumbia Salvadoreña</option>
+            <option value="folklore">Folklore Inglés</option>
+            <option value="rockEnglish">Rock Inglés</option>
+            <option value="rockSpanish">Rock Español</option>
+            <option value="romantic">Románticas</option>
+            <option value="instrumental">Instrumentales</option>
+            <option value="exit">Salir</option>
+        </select>
+        <button onclick="exitRockola()">Salir</button>
+        <div id="result"></div>
+    </div>
+    <script src="script04.js"></script>
+</body>
+</html>
